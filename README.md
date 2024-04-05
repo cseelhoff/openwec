@@ -82,6 +82,16 @@ nano openwec.conf.toml #copy from source
 ingest pipeline similar to elastic-agent tag, but for winlog
 needs to be forwarded to elastic-search pipeline for winlog-forward
 
+2. Go to Administration –> Configuration.
+
+  At the top of the page, click the Options menu and enable the Show all configurable settings, including advanced settings. option.
+
+  On the left side, navigate to soctopus –> playbook –> rulesets.
+
+  On the right side, add one or more of the following: application,category,cloud,compliance,linux,macos,network,web,windows. These are based on the top level directories from the Sigma community repository rule’s folder.
+
+  At the top of the page, click the SYNCHRONIZE GRID button under the Options menu.
+  (Reference https://docs.securityonion.net/en/2.4/playbook.html)
 ----
 
 OpenWEC is a free and open source (GPLv3) implementation of a Windows Event Collector server running on GNU/Linux and written in Rust.
